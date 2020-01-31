@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="node #0\nalcohol <= 12.755\ngini = 0.655\nsamples = 100.0%\nvalue = [0.3427, 0.4045, 0.2528]", fillcolor="#ecfdf3"] ;
+1 [label="node #1\nod280/od315_of_diluted_wines <= 1.945\ngini = 0.1063\nsamples = 39.1%\nvalue = [0.0, 0.9437, 0.0563]", fillcolor="#45e789"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="node #2\nnonflavanoid_phenols <= 0.385\ngini = 0.32\nsamples = 3.6%\nvalue = [0.0, 0.2, 0.8]", fillcolor="#a06aec"] ;
+1 -> 2 ;
+3 [label="node #3\ngini = 0.0\nsamples = 0.9%\nvalue = [0.0, 1.0, 0.0]", fillcolor="#39e581"] ;
+2 -> 3 ;
+4 [label="node #4\ngini = 0.0\nsamples = 2.7%\nvalue = [0.0, 0.0, 1.0]", fillcolor="#8139e5"] ;
+2 -> 4 ;
+5 [label="node #5\ngini = 0.0\nsamples = 35.5%\nvalue = [0.0, 1.0, 0.0]", fillcolor="#39e581"] ;
+1 -> 5 ;
+6 [label="node #6\ntotal_phenols <= 2.04\ngini = 0.526\nsamples = 60.9%\nvalue = [0.5701, 0.0467, 0.3832]", fillcolor="#f7d9c3"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="node #7\ncolor_intensity <= 3.87\ngini = 0.0476\nsamples = 21.8%\nvalue = [0.0, 0.0244, 0.9756]", fillcolor="#843ee6"] ;
+6 -> 7 ;
+8 [label="node #8\ngini = 0.0\nsamples = 0.9%\nvalue = [0.0, 1.0, 0.0]", fillcolor="#39e581"] ;
+7 -> 8 ;
+9 [label="node #9\ngini = 0.0\nsamples = 20.9%\nvalue = [0.0, 0.0, 1.0]", fillcolor="#8139e5"] ;
+7 -> 9 ;
+10 [label="node #10\nproline <= 655.0\ngini = 0.1419\nsamples = 39.1%\nvalue = [0.9242, 0.0606, 0.0152]", fillcolor="#e78b49"] ;
+6 -> 10 ;
+11 [label="node #11\nhue <= 0.9\ngini = 0.32\nsamples = 2.7%\nvalue = [0.0, 0.8, 0.2]", fillcolor="#6aeca0"] ;
+10 -> 11 ;
+12 [label="node #12\ngini = 0.0\nsamples = 0.9%\nvalue = [0.0, 0.0, 1.0]", fillcolor="#8139e5"] ;
+11 -> 12 ;
+13 [label="node #13\ngini = 0.0\nsamples = 1.8%\nvalue = [0.0, 1.0, 0.0]", fillcolor="#39e581"] ;
+11 -> 13 ;
+14 [label="node #14\ngini = 0.0\nsamples = 36.4%\nvalue = [1.0, 0.0, 0.0]", fillcolor="#e58139"] ;
+10 -> 14 ;
+}
