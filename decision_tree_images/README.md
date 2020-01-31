@@ -1,2 +1,0 @@
-# supervised_unsupervised_learning
-Supervised and Unsupervised Learning Jupyter Notebooks
