@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="node #0\ncolor_intensity <= 3.915\ngini = 0.6506\nsamples = 100.0%\nvalue = [0.309, 0.4326, 0.2584]", fillcolor="#dcfae8"] ;
+1 [label="node #1\nproline <= 790.0\ngini = 0.1837\nsamples = 43.6%\nvalue = [0.075, 0.9, 0.025]", fillcolor="#4ee88f"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="node #2\ncolor_intensity <= 3.825\ngini = 0.054\nsamples = 39.1%\nvalue = [0.0, 0.9722, 0.0278]", fillcolor="#3fe685"] ;
+1 -> 2 ;
+3 [label="node #3\ngini = 0.0\nsamples = 37.3%\nvalue = [0.0, 1.0, 0.0]", fillcolor="#39e581"] ;
+2 -> 3 ;
+4 [label="node #4\nnonflavanoid_phenols <= 0.395\ngini = 0.5\nsamples = 1.8%\nvalue = [0.0, 0.5, 0.5]", fillcolor="#ffffff"] ;
+2 -> 4 ;
+5 [label="node #5\ngini = 0.0\nsamples = 0.9%\nvalue = [0.0, 1.0, 0.0]", fillcolor="#39e581"] ;
+4 -> 5 ;
+6 [label="node #6\ngini = 0.0\nsamples = 0.9%\nvalue = [0.0, 0.0, 1.0]", fillcolor="#8139e5"] ;
+4 -> 6 ;
+7 [label="node #7\nalcohol <= 12.505\ngini = 0.375\nsamples = 4.5%\nvalue = [0.75, 0.25, 0.0]", fillcolor="#eeab7b"] ;
+1 -> 7 ;
+8 [label="node #8\ngini = 0.0\nsamples = 0.9%\nvalue = [0.0, 1.0, 0.0]", fillcolor="#39e581"] ;
+7 -> 8 ;
+9 [label="node #9\ngini = 0.0\nsamples = 3.6%\nvalue = [1.0, 0.0, 0.0]", fillcolor="#e58139"] ;
+7 -> 9 ;
+10 [label="node #10\nhue <= 0.9\ngini = 0.5458\nsamples = 56.4%\nvalue = [0.5, 0.051, 0.449]", fillcolor="#fdf3ed"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+11 [label="node #11\nod280/od315_of_diluted_wines <= 3.0\ngini = 0.0832\nsamples = 24.5%\nvalue = [0.0435, 0.0, 0.9565]", fillcolor="#8742e6"] ;
+10 -> 11 ;
+12 [label="node #12\ngini = 0.0\nsamples = 22.7%\nvalue = [0.0, 0.0, 1.0]", fillcolor="#8139e5"] ;
+11 -> 12 ;
+13 [label="node #13\ngini = 0.0\nsamples = 1.8%\nvalue = [1.0, 0.0, 0.0]", fillcolor="#e58139"] ;
+11 -> 13 ;
+14 [label="node #14\nmalic_acid <= 1.42\ngini = 0.1738\nsamples = 31.8%\nvalue = [0.9038, 0.0962, 0.0]", fillcolor="#e88e4e"] ;
+10 -> 14 ;
+15 [label="node #15\ngini = 0.0\nsamples = 3.6%\nvalue = [0.0, 1.0, 0.0]", fillcolor="#39e581"] ;
+14 -> 15 ;
+16 [label="node #16\ngini = 0.0\nsamples = 28.2%\nvalue = [1.0, 0.0, 0.0]", fillcolor="#e58139"] ;
+14 -> 16 ;
+}
